@@ -1,0 +1,176 @@
+.objects {
+  background-image: url(../resources/images/main-bg.png);
+  border-bottom: 1px solid var(--color-black);
+
+  &-wrapper {
+    padding: 60px;
+    background-color: var(--color-white);
+  }
+
+  &-tabs {
+    display: flex;
+    margin-bottom: 40px;
+
+    &__btn {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &_count {
+        position: absolute;
+        top: 17px;
+        right: 40px;
+        font-size: 13px;
+        font-weight: 500;
+        font-feature-settings: "ss12" on;
+        color: var(--color-red);
+      }
+
+      &_active {
+        background: var(--color-red);
+        border: 1px solid var(--color-red);
+        color: var(--color-white);
+
+        .objects-tabs__btn_count {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: none;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+
+    &_active {
+      display: flex;
+    }
+  }
+
+  &-item {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &_soon {
+      .objects-item__header {
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #EDE9E099;
+          z-index: 1;
+        }
+      }
+    }
+
+    &__header {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    &__floor {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      display: block;
+      padding: 9px 10px;
+      background: var(--color-red);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: var(--color-white);
+      text-transform: uppercase;
+    }
+
+    &__max-person {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      display: block;
+      padding: 13px 10px 10px 44px;
+      background: var(--color-green);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: var(--color-black);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 20V18C13 15.2386 10.7614 13 8 13C5.23858 13 3 15.2386 3 18V20H13ZM13 20H21V19C21 16.0545 18.7614 14 16 14C14.5867 14 13.3103 14.6255 12.4009 15.6311M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7ZM18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9Z' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__soon {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      padding: 11px 15px;
+      background: var(--color-pink);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 31px;
+      color: var(--color-black);
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    &__body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__name {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--color-black);
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 45px;
+      color: var(--color-black);
+      text-transform: uppercase;
+    }
+
+    &__descr {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: var(--color-black);
+    }
+
+    &__btns {
+      display: flex;
+    }
+
+    &__btn {
+      margin-right: 15px;
+
+      &_non-border {
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: var(--color-black);
+      }
+    }
+  }
+}

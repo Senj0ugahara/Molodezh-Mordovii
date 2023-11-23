@@ -1,0 +1,22 @@
+:root {
+  // Базовые
+  --font-family: 'Euclid Flex', sans-serif;
+  --content-width: 1500px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // Цвета
+  --color-white: #EDE9E0;
+  --color-black: #2A2A2A;
+  --color-green: #7BBC48;
+  --color-dark-green: #00A481;
+  --color-red: #E9503E;
+  --color-blue: #179FDB;
+  --color-violet: #A3358C;
+  --color-pink: #F0858F;
+  --color-yellow: #FDC844;
+  --color-orange: #E37329;
+
+  // Размеры
+  --grid-gap: 30px;
+}

@@ -1,0 +1,36 @@
+.project-activities {
+  background-image: url(../resources/images/main-bg.png);
+  border-bottom: 1px solid var(--color-black);
+  
+  &-wrapper {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  &__descr {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-black);
+  }
+
+  &-left {
+    position: relative;
+    padding: 90px 37px 94px 60px;
+
+    &__inner {
+      max-width: 720px;
+    }
+  }
+
+  &-right {
+    &__inner {
+      padding: 40px 60px 40px 37px;
+    }
+  }
+}

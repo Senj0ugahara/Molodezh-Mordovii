@@ -1,0 +1,17 @@
+.contacts-feedback {
+  border-bottom: 1px solid var(--color-black);
+
+  &-wrapper {
+    padding: 60px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  &__form {
+    max-width: 860px;
+  }
+}

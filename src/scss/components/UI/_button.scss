@@ -1,0 +1,88 @@
+.btn {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 18px 51px 20px 51px;
+  border: 1px solid var(--color-black);
+  border-radius: 30px;
+  overflow: hidden;
+
+  &:hover {
+    .btn__text:nth-child(odd) {
+      transform: translateY(0);
+    }
+
+    .btn__text:nth-child(even) {
+      transform: translateY(0);
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-black);
+    text-transform: uppercase;
+    transition: .5s;
+
+    &:nth-child(odd) {
+      transform: translateY(-250%);
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        transform: translateY(250%);
+      }
+    }
+
+    &:nth-child(even) {
+      transform: translateY(250%);
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        transform: translateY(-250%);
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4V6.4C4 9.76032 4 11.4405 4.65396 12.7239C5.2292 13.8529 6.14708 14.7708 7.27606 15.346C8.55953 16 10.2397 16 13.6 16H20M20 16L16 12M20 16L16 20' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+  }
+}
+
+.swiper__button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--color-black);
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (max-width: 720px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_prev {
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 12L6 12M6 12L11 17M6 12L11 7' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+  }
+
+  &_next {
+    right: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12H18M18 12L13 7M18 12L13 17' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+  }
+
+  &_disabled {
+    display: none;
+  }
+}

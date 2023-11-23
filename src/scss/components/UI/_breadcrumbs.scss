@@ -1,0 +1,36 @@
+.breadcrubms {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+      padding-right: 20px;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.625 3.75L9.375 7.5L5.625 11.25' stroke='%232A2A2A' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: var(--color-black);
+    }
+  }
+}

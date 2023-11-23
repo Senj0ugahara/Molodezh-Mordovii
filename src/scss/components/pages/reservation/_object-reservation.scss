@@ -1,0 +1,13 @@
+.object-reservation {
+  border-bottom: 1px solid var(--color-black);
+
+  &-wrapper {
+    padding: 60px 140px 60px 60px;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+}

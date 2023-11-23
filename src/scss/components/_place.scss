@@ -1,0 +1,131 @@
+.place {
+  border-bottom: 1px solid var(--color-black);
+
+  &-wrapper {
+    display: flex;
+
+    @media (max-width: 1499.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &-title {
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 50px;
+
+    @media (max-width: 720px) {
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+
+  &-left {
+    position: relative;
+    padding: 75px 220px 60px 60px;
+    border-right: 1px solid var(--color-black);
+
+    @media (max-width: 1499.98px) {
+      display: flex;
+      justify-content: center;
+      border-right: none;
+    }
+
+    @media (max-width: 720px) {
+      padding: 34px 20px 42px;
+    }
+
+    &__icon {
+      position: absolute;
+      right: -46px;
+      top: 30%;
+      z-index: 1;
+
+      &:hover {
+        animation: rotationReverse 6s ease-in-out infinite;
+      }
+
+      @media (max-width: 1499.98px) {
+        top: initial;
+        right: 25px;
+        bottom: -97px;
+        transform: none;
+      }
+
+      @media (max-width: 720px) {
+        width: 110px;
+        height: 110px;
+        right: 10px;
+        bottom: -80px;
+      }
+    }
+
+    &__inner {
+      max-width: 510px;
+
+      @media (max-width: 720px) {
+        max-width: 330px;
+      }
+    }
+
+    &__descr {
+      margin-bottom: 50px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+
+  &-right {
+    position: relative;
+
+    @media (max-width: 1499.98px) {
+      display: flex;
+    }
+
+    &_noise {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../resources/images/main-bg.png);
+        opacity: .7;
+      }
+    }
+
+    img {
+      height: 100%;
+
+      @media (max-width: 1499.98px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    max-width: 360px;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+
+    @media (max-width: 720px) {
+      padding: 18px 17px;
+
+      .btn__icon {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@keyframes rotationReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

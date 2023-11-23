@@ -1,0 +1,45 @@
+// Базовые подключения
+@import "fonts";
+@import "settings";
+@import "vars";
+
+// Подключения UI компонентов
+@import "./components/UI/navbar";
+@import "./components/UI/button";
+@import "./components/UI/overlay";
+@import "./components/UI/breadcrumbs";
+@import "./components/UI/form";
+
+// Подключения main компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/our-mission";
+@import "./components/achievements";
+@import "./components/direction";
+@import "./components/place";
+@import "./components/possibilities";
+@import "./components/logotypes";
+@import "./components/footer";
+
+// Подключение компонентов других страниц
+@import "./components/pages/reservation/room";
+@import "./components/pages/reservation/objects";
+@import "./components/pages/reservation/object-room";
+@import "./components/pages/reservation/object-peculiarities";
+@import "./components/pages/reservation/object-gallery";
+@import "./components/pages/reservation/object-reservation";
+
+@import "./components/pages/activities/activities";
+@import "./components/pages/activities/our-activities";
+@import "./components/pages/activities/activities-page";
+@import "./components/pages/activities/activities-news";
+@import "./components/pages/activities/activities-projects";
+
+@import "./components/pages/contacts/contacts";
+@import "./components/pages/contacts/contacts-info";
+@import "./components/pages/contacts/contacts-brief";
+@import "./components/pages/contacts/contacts-feedback";
+
+@import "./components/pages/project-activities/project-activities";
+@import "./components/pages/project-activities/project-page";
+@import "./components/pages/project-activities/project-page-about";

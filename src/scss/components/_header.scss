@@ -1,0 +1,118 @@
+.header {
+  &-main {
+    background-image: url(../resources/images/main-bg.png);
+    background-size: 70px;
+    border-bottom: 1px solid var(--color-black);
+
+    &__wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 29px 60px;
+
+      @media (max-width: 1499.98px) {
+        justify-content: start;
+      }
+
+      @media (max-width: 720px) {
+        padding: 20px;
+      }
+    }
+
+    &__swich-version {
+      position: relative;
+      padding-left: 39px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--color-black);
+
+      @media (max-width: 1499.98px) {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.0002 5C7.52257 5 3.73228 7.94288 2.45801 12C3.73226 16.0571 7.52256 19 12.0002 19C16.4778 19 20.2681 16.0571 21.5424 12C20.2681 7.94291 16.4778 5 12.0002 5Z' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__logo {
+      img {
+        max-width: 192px;
+        height: 61px;
+
+        @media (max-width: 720px) {
+          width: 120px;
+          height: 38px;
+        }
+      }
+    }
+
+    &__phone {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      color: var(--color-black);
+
+      @media (max-width: 1499.98px) {
+        margin-left: auto;
+      }
+
+      @media (max-width: 720px) {
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  &-burger {
+    margin-left: 24px;
+    display: none;
+    height: 20px;
+    cursor: pointer;
+
+    @media (max-width: 1499.98px) {
+      display: block;
+    }
+
+    &__line {
+      position: relative;
+      display: block;
+      width: 48px;
+      transform: translateY(9px);
+      border-bottom: 2px solid var(--color-black);
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+        width: 39px;
+        height: 2px;
+        border-bottom: 2px solid var(--color-black);
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 33px;
+        height: 2px;
+        border-bottom: 2px solid var(--color-black);
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}

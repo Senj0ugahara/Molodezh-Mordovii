@@ -1,0 +1,20 @@
+.contacts-brief {
+  border-bottom: 1px solid var(--color-black);
+
+  &-wrapper {
+    padding: 60px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  &__descr {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-black);
+  }
+}

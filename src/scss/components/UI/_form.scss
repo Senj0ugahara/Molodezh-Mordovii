@@ -1,0 +1,122 @@
+.form {
+  &-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &-item {
+    width: 100%;
+
+    &_md {
+      width: 33%;
+    }
+
+    &_lg {
+      width: 49%;
+    }
+
+    &_icon-person {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 20V18C13 15.2386 10.7614 13 8 13C5.23858 13 3 15.2386 3 18V20H13ZM13 20H21V19C21 16.0545 18.7614 14 16 14C14.5867 14 13.3103 14.6255 12.4009 15.6311M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7ZM18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9Z' stroke='%23E37329' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 60px;
+    padding: 19px 20px 19px 20px;
+    background: transparent;
+    border: 1px solid var(--color-black);
+
+    &_date {
+      &::-webkit-calendar-picker-indicator {
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 10H21M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z' stroke='%23E37329' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+
+    &_time {
+      &::-webkit-calendar-picker-indicator {
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 8V12H15M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z' stroke='%23E37329' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+
+    &_count-person {
+      &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        display: none;
+      }
+    }
+
+    &_message {
+      height: 100px;
+      resize: none;
+    }
+  }
+
+  &-submit {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    &__check {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__text {
+      max-width: 400px;
+      display: block;
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: var(--color-black);
+
+      a {
+        color: var(--color-orange);
+      }
+    }
+  }
+
+  &__btn {
+    padding: 0 30px;
+
+    &_icon {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.3029 13.695L20.104 3.89748M10.5815 14.1356L12.8039 18.5804C13.341 19.6546 13.6095 20.1916 13.9478 20.3356C14.2414 20.4606 14.577 20.438 14.8511 20.2748C15.167 20.0866 15.3611 19.5184 15.7491 18.3819L19.9483 6.0844C20.2864 5.09415 20.4555 4.59902 20.3398 4.27148C20.2391 3.98654 20.015 3.7624 19.73 3.66173C19.4025 3.54601 18.9073 3.71508 17.9171 4.05321L5.61958 8.25236C4.48309 8.64043 3.91485 8.83447 3.72673 9.15038C3.56348 9.42453 3.54086 9.76013 3.66585 10.0537C3.80987 10.392 4.34693 10.6605 5.42107 11.1976L9.86592 13.42C10.0429 13.5085 10.1314 13.5528 10.2081 13.6119C10.2761 13.6643 10.3371 13.7253 10.3896 13.7934C10.4487 13.8701 10.493 13.9586 10.5815 14.1356Z' stroke='%232A2A2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+    }
+  }
+
+  &__checkbox {
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+
+    &:checked {
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.945312 6.38888L5.11198 9.16666L12.7509 0.833328' stroke='%23EDE9E0' stroke-width='2.01011'/%3E%3C/svg%3E ");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: var(--color-orange);
+      z-index: 1;
+    }
+  }
+}
