@@ -14,6 +14,7 @@
 
   <script src="resources/libraries/jquery.js" defer></script>
   <script src="resources/libraries/wow.min.js" defer></script>
+  <script src="resources/libraries/countUp.umd.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="scripts/main.min.js" defer></script>
 </head>
@@ -117,11 +118,15 @@
               <p class="project-activities__descr">
                 Таким образом, сплочённость команды профессионалов требует определения и уточнения стандартных подходов. А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть в равной степени предоставлены сами себе. Кстати,  сделанные на базе интернет-аналитики выводы формируют глобальную экономическую сеть и при этом —  разоблачены.
               </p>
+              <div class="project-activities-contribution">
+                <span class="project-activities-contribution__count" id="countUp">0</span>
+                <p class="project-activities-contribution__descr">привлекли в Республику в 2022 году</p>
+              </div>
             </div>
           </div>
           <div class="project-activities-right">
             <div class="project-activities-right__inner">
-              <img src="resources/images/mordovia.svg" alt="flag map mordovia">
+              <img src="resources/images/project-activities-img.svg" alt="project activities main image">
             </div>
           </div>
         </div>
@@ -131,57 +136,154 @@
       <div class="container">
         <div class="activities-projects-wrapper">
           <div class="activities-projects__inner">
-            <h2 class="title activities-projects__title">проекты направления</h2>
-            <ul class="list-reset activities-projects-list">
-              <li class="activities-projects-item">
-                <div class="activities-projects-item__header">
-                  <img src="resources/images/projects/01.jpg" alt="project img 1">
-                  <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
-                </div>
-                <div class="activities-projects-item__body">
-                  <p class="activities-projects-item__descr">
-                    Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
-                  </p>
-                  <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
-                </div>
-              </li>
-              <li class="activities-projects-item">
-                <div class="activities-projects-item__header">
-                  <img src="resources/images/projects/02.jpg" alt="project img 2">
-                  <h3 class="activities-projects-item__title">Лагерь молодёжного актива «СтоЛица»</h3>
-                </div>
-                <div class="activities-projects-item__body">
-                  <p class="activities-projects-item__descr">
-                    «СтоЛица» ‒ это точка сбора лидеров изменений в молодежной политике с высоким уровнем концентрации разноформатных событий и активных людей на один квадратный метр.
-                  </p>
-                  <a class="activities-projects-item__btn" href="#">Подробнее</a>
-                </div>
-              </li>
-              <li class="activities-projects-item">
-                <div class="activities-projects-item__header">
-                  <img src="resources/images/projects/03.jpg" alt="project img 3">
-                  <h3 class="activities-projects-item__title">Чистые игры</h3>
-                </div>
-                <div class="activities-projects-item__body">
-                  <p class="activities-projects-item__descr">
-                    Чистые Игры — командные соревнования по сбору и сортировке мусора, которые проводятся на загрязненных территориях. Победители получают призы от спонсоров. Все мероприятия согласованы с местной администрацией.
-                  </p>
-                  <a class="activities-projects-item__btn" href="#">Подробнее</a>
-                </div>
-              </li>
-              <li class="activities-projects-item">
-                <div class="activities-projects-item__header">
-                  <img src="resources/images/projects/04.jpg" alt="project img 4">
-                  <h3 class="activities-projects-item__title">Герои Отечества</h3>
-                </div>
-                <div class="activities-projects-item__body">
-                  <p class="activities-projects-item__descr">
-                    Проект «Герои Отечества» проводится в целях организации системной работы по поддержке различных категорий защитников Отечества, участников героических событий, а также по увековечению памяти военнослужащих и представителей правоохранительных органов, погибших при исполнении воинского и служебного долга.
-                  </p>
-                  <a class="activities-projects-item__btn" href="#">Подробнее</a>
-                </div>
-              </li>
-            </ul>
+            <div class="activities-projects-buttons">
+              <button class="btn-reset btn activities-projects-buttons__btn activities-projects-buttons__btn_active" data-status="all">
+                ВСЕ
+                <span class="activities-projects-buttons__btn_count">2</span>
+              </button>
+              <button class="btn-reset btn activities-projects-buttons__btn" data-status="patriotism">
+                ПАТРИОТИЗМ
+                <span class="activities-projects-buttons__btn_count">4</span>
+              </button>
+              <button class="btn-reset btn activities-projects-buttons__btn" data-status="it">
+                IT
+                <span class="activities-projects-buttons__btn_count">6</span>
+              </button>
+              <button class="btn-reset btn activities-projects-buttons__btn" data-status="career">
+                КАРЬЕРА
+                <span class="activities-projects-buttons__btn_count">2</span>
+              </button>
+              <button class="btn-reset btn activities-projects-buttons__btn" data-status="volunteering">
+                ДОБРОВОЛЬЧЕСТВО
+                <span class="activities-projects-buttons__btn_count">7</span>
+              </button>
+              <button class="btn-reset btn activities-projects-buttons__btn" data-status="samoupravleniye">
+                САМОУПРАВЛЕНИЕ
+                <span class="activities-projects-buttons__btn_count">1</span>
+              </button>
+            </div>
+            <div class="activities-projects-content">
+              <ul class="list-reset activities-projects-list activities-projects-list_disp-none activities-projects-list_active" data-status="all">
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/01.jpg" alt="project img 1">
+                    <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
+                    </p>
+                    <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
+                  </div>
+                </li>
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/02.jpg" alt="project img 2">
+                    <h3 class="activities-projects-item__title">Лагерь молодёжного актива «СтоЛица»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      «СтоЛица» ‒ это точка сбора лидеров изменений в молодежной политике с высоким уровнем концентрации разноформатных событий и активных людей на один квадратный метр.
+                    </p>
+                    <a class="activities-projects-item__btn" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/03.jpg" alt="project img 3">
+                    <h3 class="activities-projects-item__title">Чистые игры</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Чистые Игры — командные соревнования по сбору и сортировке мусора, которые проводятся на загрязненных территориях. Победители получают призы от спонсоров. Все мероприятия согласованы с местной администрацией.
+                    </p>
+                    <a class="activities-projects-item__btn" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/04.jpg" alt="project img 4">
+                    <h3 class="activities-projects-item__title">Герои Отечества</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Проект «Герои Отечества» проводится в целях организации системной работы по поддержке различных категорий защитников Отечества, участников героических событий, а также по увековечению памяти военнослужащих и представителей правоохранительных органов, погибших при исполнении воинского и служебного долга.
+                    </p>
+                    <a class="activities-projects-item__btn" href="#">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset activities-projects-list activities-projects-list_disp-none" data-status="patriotism">
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/01.jpg" alt="project img 1">
+                    <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
+                    </p>
+                    <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset activities-projects-list activities-projects-list_disp-none" data-status="it">
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/01.jpg" alt="project img 1">
+                    <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
+                    </p>
+                    <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset activities-projects-list activities-projects-list_disp-none" data-status="career">
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/01.jpg" alt="project img 1">
+                    <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
+                    </p>
+                    <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset activities-projects-list activities-projects-list_disp-none" data-status="volunteering">
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/01.jpg" alt="project img 1">
+                    <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
+                    </p>
+                    <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset activities-projects-list activities-projects-list_disp-none" data-status="samoupravleniye">
+                <li class="activities-projects-item">
+                  <div class="activities-projects-item__header">
+                    <img src="resources/images/projects/01.jpg" alt="project img 1">
+                    <h3 class="activities-projects-item__title">Молодёжный студенческий проект «трАнСфОрмация»</h3>
+                  </div>
+                  <div class="activities-projects-item__body">
+                    <p class="activities-projects-item__descr">
+                      Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования и профессиональных образовательных организаций.
+                    </p>
+                    <a class="activities-projects-item__btn" href="inner-pages/project-activities/studencheskiy-proyekt-transformatsiya.html">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="activities-projects-empty"></div>
         </div>

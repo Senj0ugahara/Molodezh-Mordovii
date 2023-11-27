@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/Molodezh-Mordovii/resources/favicon.ico" type="image/x-icon">
   <title>Молодежь Мордовии</title>
 
   <link rel="stylesheet" href="/Molodezh-Mordovii/styles/vendor.css">
@@ -14,6 +14,7 @@
 
   <script src="/Molodezh-Mordovii/resources/libraries/jquery.js" defer></script>
   <script src="/Molodezh-Mordovii/resources/libraries/wow.min.js" defer></script>
+  <script src="/Molodezh-Mordovii/resources/libraries/countUp.umd.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="/Molodezh-Mordovii/scripts/main.min.js" defer></script>
 </head>
@@ -98,27 +99,36 @@
   <main>
     <section class="project-page">
       <div class="container">
-        <div class="project-page__inner">
-          <div class="breadcrubms">
-            <div class="breadcrubms-wrapper">
-              <ul class="list-reset breadcrubms-list">
-                <li class="breadcrubms-item">
-                  <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/">Главная</a>
-                </li>
-                <li class="breadcrubms-item">
-                  <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/project-activities.html">Проектная деятельность</a>
-                </li>
-                <li class="breadcrubms-item">
-                  <a class="breadcrubms-item__link" href="studencheskiy-proyekt-transformatsiya.html">Молодёжный студенческий проект «трАнСфОрмация»</a>
-                </li>
-              </ul>
+        <div class="project-page-wrapper">
+          <div class="project-page-left">
+            <div class="project-page__inner">
+              <div class="breadcrubms">
+                <div class="breadcrubms-wrapper">
+                  <ul class="list-reset breadcrubms-list">
+                    <li class="breadcrubms-item">
+                      <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/">Главная</a>
+                    </li>
+                    <li class="breadcrubms-item">
+                      <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/project-activities.html">Проектная деятельность</a>
+                    </li>
+                    <li class="breadcrubms-item">
+                      <a class="breadcrubms-item__link" href="studencheskiy-proyekt-transformatsiya.html">Молодёжный студенческий проект «трАнСфОрмация»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="title project-page__title">
+                Молодёжный студенческий проект «трАнСфОрмация»
+              </h2>
             </div>
           </div>
-          <h2 class="title project-page__title">
-            Молодёжный студенческий проект «трАнСфОрмация»
-          </h2>
-          <div class="project-page__descr">
-            Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования   и профессиональных образовательных организаций.
+          <div class="project-page-right">
+            <div class="project-page-right__info">
+              <h4 class="project-page-right__author">Автор проекта:</h4>
+              <p class="project-page-right__descr">
+                Данный проект направлен на решение проблемы кадрового резерва на уровне студенческих активов образовательных организаций высшего образования   и профессиональных образовательных организаций.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -134,10 +144,14 @@
             <div class="project-page-about__wrapper">
               <div class="project-page-about__inner">
                 <div class="project-page-about__info">
-                  <h3 class="project-page-about__title">Автор проекта</h3>
+                  <h4 class="project-page-about__title project-page-about__title_small">Автор проекта – Полина Иванова, студентка 5 курса МГУ им. Н.П. Огарёва.</h4>
                   <p class="project-page-about__descr">
                     Таким образом, сплочённость команды профессионалов требует определения и уточнения стандартных подходов. А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть в равной степени предоставлены сами себе. Кстати,  сделанные на базе интернет-аналитики выводы формируют глобальную экономическую сеть и при этом —  разоблачены.
                   </p>
+                  <div class="project-page-about-summa">
+                    <p class="project-page-about-summa__text">Сумма Гранта</p>
+                    <span class="project-page-about-summa__count" id="projectPageCountUp"></span>
+                  </div>
                 </div>
                 <div class="project-page-about__info">
                   <h3 class="project-page-about__title">подробнее о проекте</h3>
@@ -145,6 +159,9 @@
                     Данный проект направлен на быстрое и комплексное обучение конкретным направлениям, которое могут помочь активистам научиться грамотной организации деятельности, и не требует от ребят большого опыта. Также проект решает задачу коммуникации и командообразования как внутри новых студенческих коллективов, так и между ними. Параллельно с этим для НКО и ОИВ, занимающихся ГМП, важно понимать и знать о планах студенческих активов, для того чтобы планировать студенческие мероприятия исходя из современных запросов и потребностей молодёжи, поэтому составление дорожной карты в рамках проекта, поможет решить проблему пересечения студенческих мероприятий с республиканскими, а также поможет привлечь студентов к организации мероприятия и масштабировать данные мероприятия.
                   </p>
                 </div>
+              </div>
+              <div class="project-page-about__image">
+                <img src="/Molodezh-Mordovii/resources/images/stories-author/02.jpg" alt="Полина Иванова">
               </div>
               <div class="project-page-about__empty"></div>
             </div>
