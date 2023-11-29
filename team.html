@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+  <title>Молодежь Мордовии</title>
+
+  <link rel="stylesheet" href="styles/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="resources/libraries/animate.css">
+  <link rel="stylesheet" href="styles/style.min.css">
+
+  <script src="resources/libraries/jquery.js" defer></script>
+  <script src="resources/libraries/wow.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="scripts/main.min.js" defer></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__wrapper">
+          <a class="header-main__swich-version" href="#">Версия для слабовидящих</a>
+          <a class="header-main__logo" href="/Molodezh-Mordovii/">
+            <img src="resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <div class="header-main__search">
+            <img class="header-main__search_open-icon" src="resources/images/icons/search.svg" alt="search">
+            <form class="form">
+              <div class="form-search">
+                <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+              </div>
+            </form>
+          </div>
+          <a class="header-main__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <div class="header-burger">
+            <span class="header-burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-mobile">
+          <a class="navbar-mobile__logo" href="#">
+            <img src="resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <button class="btn-reset navbar-mobile__close"></button>
+        </div>
+        <div class="navbar-wrapper">
+          <ul class="list-reset navbar-list navbar-list_main">
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="reservation.html">
+                Бронирование<br> помещений
+              </a>
+            </li>
+            <li class="navbar-item">
+              <div class="navbar-select">
+                <div class="navbar-select__header">
+                  <div class="navbar-select__selected">
+                    Наша<br> деятельность
+                  </div>
+                </div>
+                <div class="navbar-select__body">
+                  <ul class="list-reset navbar-select__list">
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="activities.html">Наши направления</a>
+                    </li>
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="#">Общественные организации</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                Твои<br> возможности
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                События
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                Профилактика<br> негативных явлений
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_hidden">
+              <a class="navbar-item__link" href="#">
+                Поиск по сайту
+              </a>
+            </li>
+          </ul>
+          <ul class="list-reset navbar-list navbar-list_two">
+            <li class="navbar-item">
+              <button class="btn-reset navbar-item__back">Назад</button>
+            </li>
+            <li class="navbar-item">
+              <h4 class="navbar-item__heading">Наша деятельность</h4>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="activities.html">Наши направления</a>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="#">Общественные организации</a>
+            </li>
+          </ul>
+          <div class="navbar-social">
+            <a class="navbar-social__link navbar-social__link_vk" href="#">
+              <span class="navbar-social__icon"></span>
+              Вконтакте
+            </a>
+            <a class="navbar-social__link navbar-social__link_telegram" href="#">
+              <span class="navbar-social__icon"></span>
+              Телеграм
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="team-hero">
+      <div class="container">
+        <div class="team-hero-inner">
+          <div class="breadcrubms">
+            <div class="breadcrubms-wrapper">
+              <ul class="list-reset breadcrubms-list">
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="/">Главная</a>
+                </li>
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="team.html">Команда</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="title team-hero__title">Команда <span class="team-hero__title_red">#Молодежь<br>Мордовии</span></h2>
+          <p class="team-hero__descr">
+            Государственное бюджетное учреждение «Мордовский республиканский молодежный центр» является подведомственным учреждением Государственного комитета по делам молодежи Республики Мордовия и осуществляет свою деятельность в соответствии с приоритетными направлениями стратегии государственной молодежной политики Республики Мордовии.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="team-main">
+      <div class="container">
+        <div class="team-main-wrapper">
+          <div class="team-main-inner">
+            <div class="team-main-sort">
+              <div class="team-main-sort__director team-main-director">
+                <div class="team-main-director__inner">
+                  <div class="team-main-director__img">
+                    <img src="resources/images/stories-author/03.jpg" alt="Куликова Алёна Олеговна">
+                  </div>
+                  <div class="team-main-director__info">
+                    <h4 class="team-main-director__position">Директор</h4>
+                    <h3 class="team-main-director__name">Куликова Алёна Олеговна</h3>
+                    <a class="team-main-director__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-director__social">
+                      Связаться:
+                      <a class="team-main-director__link team-main-director__link_vk" href="#"></a>
+                      <a class="team-main-director__link team-main-director__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-main-sort__tabs team-main-tabs">
+                <button class="btn-reset btn team-main-tabs__btn team-main-tabs__btn_active" data-status="all">
+                  ВСЕ
+                  <span class="team-main-tabs__btn_count"></span>
+                </button>
+                <button class="btn-reset btn team-main-tabs__btn" data-status="admin">
+                  АДМИНИСТРАЦИЯ
+                  <span class="team-main-tabs__btn_count"></span>
+                </button>
+                <button class="btn-reset btn team-main-tabs__btn" data-status="nach-otdel">
+                  НАЧАЛЬНИКИ ОТДЕЛОВ
+                  <span class="team-main-tabs__btn_count"></span>
+                </button>
+                <button class="btn-reset btn team-main-tabs__btn" data-status="spec-po-rab-saransk">
+                  специалисты по работе с молодёжью г. Саранск
+                  <span class="team-main-tabs__btn_count"></span>
+                </button>
+                <button class="btn-reset btn team-main-tabs__btn" data-status="spec-po-rab-municip">
+                  специалисты по работе с молодёжью муниципальных районов
+                  <span class="team-main-tabs__btn_count"></span>
+                </button>
+                <button class="btn-reset btn team-main-tabs__btn" data-status="rukov-obshchestv">
+                  руководители общественных организаций
+                  <span class="team-main-tabs__btn_count"></span>
+                </button>
+              </div>
+            </div>
+            <div class="team-main-content">
+              <ul class="list-reset team-main-list team-main-list_active" data-status="all">
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/01.jpg" alt="Кидяева Анастасия Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/02.jpg" alt="Прайс Вероника Евгеньевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Прайс Вероника Евгеньевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/03.jpg" alt="Иванова Татьяна Константиновна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Иванова Татьяна Константиновна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/04.jpg" alt="Радайкина Дарья Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Председатель регионального отделения РДДМ «Движение Первых» Республики Мордовия</h4>
+                    <h3 class="team-main-item__name">Радайкина Дарья Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/05.jpg" alt="Губина Инна Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Региональный координатор Всероссийского проекта «Навигаторы детства»</h4>
+                    <h3 class="team-main-item__name">Губина Инна Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/06.jpg" alt="Макушкина Анастасия Александровна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Отдел по связям с общественностью</h4>
+                    <h3 class="team-main-item__name">Макушкина Анастасия Александровна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/07.jpg" alt="Бубнова Наталья Викторовна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Организационно-кадровый отдел</h4>
+                    <h3 class="team-main-item__name">Бубнова Наталья Викторовна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/08.jpg" alt="Журавлева Наталья Ивановна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Отдел гражданско-патриотических программ</h4>
+                    <h3 class="team-main-item__name">Журавлева Наталья Ивановна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset team-main-list" data-status="admin">
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/01.jpg" alt="Кидяева Анастасия Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/02.jpg" alt="Прайс Вероника Евгеньевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Прайс Вероника Евгеньевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/03.jpg" alt="Иванова Татьяна Константиновна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Иванова Татьяна Константиновна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/01.jpg" alt="Кидяева Анастасия Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/02.jpg" alt="Прайс Вероника Евгеньевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Прайс Вероника Евгеньевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/03.jpg" alt="Иванова Татьяна Константиновна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Иванова Татьяна Константиновна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/04.jpg" alt="Радайкина Дарья Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Председатель регионального отделения РДДМ «Движение Первых» Республики Мордовия</h4>
+                    <h3 class="team-main-item__name">Радайкина Дарья Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/05.jpg" alt="Губина Инна Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Региональный координатор Всероссийского проекта «Навигаторы детства»</h4>
+                    <h3 class="team-main-item__name">Губина Инна Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/06.jpg" alt="Макушкина Анастасия Александровна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Отдел по связям с общественностью</h4>
+                    <h3 class="team-main-item__name">Макушкина Анастасия Александровна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/07.jpg" alt="Бубнова Наталья Викторовна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Организационно-кадровый отдел</h4>
+                    <h3 class="team-main-item__name">Бубнова Наталья Викторовна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/08.jpg" alt="Журавлева Наталья Ивановна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Отдел гражданско-патриотических программ</h4>
+                    <h3 class="team-main-item__name">Журавлева Наталья Ивановна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset team-main-list" data-status="nach-otdel">
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/01.jpg" alt="Кидяева Анастасия Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset team-main-list" data-status="spec-po-rab-saransk">
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/01.jpg" alt="Кидяева Анастасия Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset team-main-list" data-status="spec-po-rab-municip">
+                <li class="team-main-item">
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset team-main-list" data-status="rukov-obshchestv">
+                <li class="team-main-item">
+                  <div class="team-main-item__header">
+                    <img src="resources/images/team/01.jpg" alt="Кидяева Анастасия Николаевна">
+                  </div>
+                  <div class="team-main-item__body">
+                    <h4 class="team-main-item__position">Заместитель директора</h4>
+                    <h3 class="team-main-item__name">Кидяева Анастасия Николаевна</h3>
+                    <a class="team-main-item__email" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+                    <div class="team-main-item__social">
+                      Связаться:
+                      <a class="team-main-item__link team-main-item__link_vk" href="#"></a>
+                      <a class="team-main-item__link team-main-item__link_telegram" href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-main-empty"></div>
+        </div>
+        <div class="team-main-wrapper">
+          <div class="team-main-inner team-main-inner_pagination">
+            <div class="team-main-pagination"></div>
+            <button class="btn-reset team-main__show-more">
+              <p class="team-main__show-more_text">ПОКАЗАТЬ ЕЩЕ 9</p>
+              <span class="btn__icon team-main__show-more_icon"></span>
+            </button>
+          </div>
+          <div class="team-main-empty team-main-empty_bg"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a class="footer-logo" href="#">
+          <img src="resources/images/logo.svg" alt="Main logo">
+        </a>
+        <div class="footer-phone">
+          <a class="footer-phone__link" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <p class="footer-phone__time-work">пн-пт с 9:00 до 18:00</p>
+        </div>
+        <div class="footer-mail">
+          <a class="footer-mail__link" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+          <p class="footer-mail__time-work">принимаем сообщения 24/7</p>
+        </div>
+        <div class="footer-social">
+          <a class="btn footer-social__link footer-social__link_vk" href="#">
+            <span class="btn__text" data-text="В">
+              В
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="о">
+              о
+            </span>
+            <span class="btn__text" data-text="н">
+              н
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+          </a>
+          <a class="btn footer-social__link footer-social__link_telegram" href="#">
+            <span class="btn__text" data-text="Т">
+              Т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="л">
+              л
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="г">
+              г
+            </span>
+            <span class="btn__text" data-text="р">
+              р
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="м">
+              м
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
