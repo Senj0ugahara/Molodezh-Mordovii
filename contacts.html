@@ -14,6 +14,7 @@
 
   <script src="resources/libraries/jquery.js" defer></script>
   <script src="resources/libraries/wow.min.js" defer></script>
+  <script src="resources/libraries/inputMask.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="scripts/main.min.js" defer></script>
 </head>
@@ -45,20 +46,20 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-mobile">
-          <a class="navbar-mobile__logo" href="#">
+          <a class="navbar-mobile__logo" href="/Molodezh-Mordovii/">
             <img src="resources/images/logo.svg" alt="Main Logo">
           </a>
           <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
           <button class="btn-reset navbar-mobile__close"></button>
         </div>
         <div class="navbar-wrapper">
-          <ul class="list-reset navbar-list navbar-list_main">
+          <ul class="list-reset navbar-list">
             <li class="navbar-item">
               <a class="navbar-item__link" href="reservation.html">
                 Бронирование<br> помещений
               </a>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item navbar-item_select">
               <div class="navbar-select">
                 <div class="navbar-select__header">
                   <div class="navbar-select__selected">
@@ -93,7 +94,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-item__link" href="#">
+              <a class="navbar-item__link" href="team.html">
                 О нас
               </a>
             </li>
@@ -103,9 +104,15 @@
               </a>
             </li>
             <li class="navbar-item navbar-item_hidden">
-              <a class="navbar-item__link" href="#">
-                Поиск по сайту
-              </a>
+              <button class="btn-reset navbar-item__link navbar-item__link_search">
+                <img class="navbar-item__link_open-icon" src="resources/images/icons/search.svg" alt="search">
+                <p class="navbar-item__link_text">Поиск по сайту</p>
+                <form class="form">
+                  <div class="form-search">
+                    <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+                  </div>
+                </form>
+              </button>
             </li>
           </ul>
           <ul class="list-reset navbar-list navbar-list_two">
@@ -152,10 +159,12 @@
               </ul>
             </div>
           </div>
-          <h2 class="title contacts__title">контакты</h2>
-          <p class="contacts__descr">
-            Таким образом, сплочённость команды профессионалов требует определения и уточнения стандартных подходов. А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть в равной степени предоставлены сами себе. Кстати,  сделанные на базе интернет-аналитики выводы формируют глобальную экономическую сеть и при этом —  разоблачены.
-          </p>
+          <div class="contacts-hero">
+            <h2 class="title contacts__title">Контакты</h2>
+            <div class="contacts-hero__logo">
+              <img src="resources/images/logo-mini.svg" alt="Logo Mini">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -302,20 +311,57 @@
         </div>
       </div>
     </section>
-    <section class="contacts-brief">
+    <section class="contacts-team">
       <div class="container">
-        <div class="contacts-brief-wrapper">
-          <h2 class="title contacts-brief__title">сводка по социальным сетям</h2>
-          <p class="contacts-brief__descr">
-            Таким образом, сплочённость команды профессионалов требует определения и уточнения стандартных подходов. А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть в равной степени предоставлены сами себе. Кстати,  сделанные на базе интернет-аналитики выводы формируют глобальную экономическую сеть и при этом —  разоблачены.
-          </p>
+        <div class="contacts-team-wrapper">
+          <div class="contacts-team-info">
+            <h2 class="title contacts-team__title">
+              Команда
+              <span class="contacts-team__title_red">#Молодежь<br>Мордовии</span>
+            </h2>
+            <p class="contacts-team-info__descr">
+              Государственное бюджетное учреждение «Мордовский республиканский молодежный центр» является подведомственным учреждением Государственного комитета по делам молодежи Республики Мордовия и осуществляет свою деятельность в соответствии с приоритетными направлениями стратегии государственной молодежной политики Республики Мордовии.
+            </p>
+          </div>
+          <div class="contacts-team-button">
+            <a class="btn contacts-team__btn" href="team.html">
+              <span class="btn__text" data-text="П">
+                П
+              </span>
+              <span class="btn__text" data-text="о">
+                о
+              </span>
+              <span class="btn__text" data-text="д">
+                д
+              </span>
+              <span class="btn__text" data-text="р">
+                р
+              </span>
+              <span class="btn__text" data-text="о">
+                о
+              </span>
+              <span class="btn__text" data-text="б">
+                б
+              </span>
+              <span class="btn__text" data-text="н">
+                н
+              </span>
+              <span class="btn__text" data-text="е">
+                е
+              </span>
+              <span class="btn__text" data-text="е">
+                е
+              </span>
+              <span class="btn__icon"></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section class="contacts-feedback">
       <div class="container">
         <div class="contacts-feedback-wrapper">
-          <h2 class="title contacts-feedback__title">обратный звонок</h2>
+          <h2 class="title contacts-feedback__title">обратная связь</h2>
           <form class="form contacts-feedback__form">
             <div class="form-wrapper">
               <div class="form-item form-item_lg">
