@@ -24,7 +24,7 @@
       <div class="container">
         <div class="header-main__wrapper">
           <a class="header-main__swich-version" href="#">Версия для слабовидящих</a>
-          <a class="header-main__logo" href="/Molodezh-Mordovii/">
+          <a class="header-main__logo" href="/">
             <img src="resources/images/logo.svg" alt="Main Logo">
           </a>
           <div class="header-main__search">
@@ -45,20 +45,20 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-mobile">
-          <a class="navbar-mobile__logo" href="#">
+          <a class="navbar-mobile__logo" href="/">
             <img src="resources/images/logo.svg" alt="Main Logo">
           </a>
           <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
           <button class="btn-reset navbar-mobile__close"></button>
         </div>
         <div class="navbar-wrapper">
-          <ul class="list-reset navbar-list navbar-list_main">
+          <ul class="list-reset navbar-list">
             <li class="navbar-item">
               <a class="navbar-item__link" href="reservation.html">
                 Бронирование<br> помещений
               </a>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item navbar-item_select">
               <div class="navbar-select">
                 <div class="navbar-select__header">
                   <div class="navbar-select__selected">
@@ -78,7 +78,7 @@
               </div>
             </li>
             <li class="navbar-item">
-              <a class="navbar-item__link" href="#">
+              <a class="navbar-item__link" href="capabilities.html">
                 Твои<br> возможности
               </a>
             </li>
@@ -93,7 +93,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-item__link" href="#">
+              <a class="navbar-item__link" href="team.html">
                 О нас
               </a>
             </li>
@@ -103,9 +103,15 @@
               </a>
             </li>
             <li class="navbar-item navbar-item_hidden">
-              <a class="navbar-item__link" href="#">
-                Поиск по сайту
-              </a>
+              <button class="btn-reset navbar-item__link navbar-item__link_search">
+                <img class="navbar-item__link_open-icon" src="resources/images/icons/search.svg" alt="search">
+                <p class="navbar-item__link_text">Поиск по сайту</p>
+                <form class="form">
+                  <div class="form-search">
+                    <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+                  </div>
+                </form>
+              </button>
             </li>
           </ul>
           <ul class="list-reset navbar-list navbar-list_two">

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+  <title>Молодежь Мордовии</title>
+
+  <link rel="stylesheet" href="styles/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="resources/libraries/animate.css">
+  <link rel="stylesheet" href="styles/style.min.css">
+
+  <script src="resources/libraries/jquery.js" defer></script>
+  <script src="resources/libraries/wow.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="scripts/main.min.js" defer></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__wrapper">
+          <a class="header-main__swich-version" href="#">Версия для слабовидящих</a>
+          <a class="header-main__logo" href="/">
+            <img src="resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <div class="header-main__search">
+            <img class="header-main__search_open-icon" src="resources/images/icons/search.svg" alt="search">
+            <form class="form">
+              <div class="form-search">
+                <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+              </div>
+            </form>
+          </div>
+          <a class="header-main__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <div class="header-burger">
+            <span class="header-burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-mobile">
+          <a class="navbar-mobile__logo" href="/">
+            <img src="resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <button class="btn-reset navbar-mobile__close"></button>
+        </div>
+        <div class="navbar-wrapper">
+          <ul class="list-reset navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="reservation.html">
+                Бронирование<br> помещений
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_select">
+              <div class="navbar-select">
+                <div class="navbar-select__header">
+                  <div class="navbar-select__selected">
+                    Наша<br> деятельность
+                  </div>
+                </div>
+                <div class="navbar-select__body">
+                  <ul class="list-reset navbar-select__list">
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="activities.html">Наши направления</a>
+                    </li>
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="#">Общественные организации</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                Твои<br> возможности
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                События
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                Профилактика<br> негативных явлений
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="team.html">
+                О нас
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_hidden">
+              <button class="btn-reset navbar-item__link navbar-item__link_search">
+                <img class="navbar-item__link_open-icon" src="resources/images/icons/search.svg" alt="search">
+                <p class="navbar-item__link_text">Поиск по сайту</p>
+                <form class="form">
+                  <div class="form-search">
+                    <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+                  </div>
+                </form>
+              </button>
+            </li>
+          </ul>
+          <ul class="list-reset navbar-list navbar-list_two">
+            <li class="navbar-item">
+              <button class="btn-reset navbar-item__back">Назад</button>
+            </li>
+            <li class="navbar-item">
+              <h4 class="navbar-item__heading">Наша деятельность</h4>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="activities.html">Наши направления</a>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="#">Общественные организации</a>
+            </li>
+          </ul>
+          <div class="navbar-social">
+            <a class="navbar-social__link navbar-social__link_vk" href="#">
+              <span class="navbar-social__icon"></span>
+              Вконтакте
+            </a>
+            <a class="navbar-social__link navbar-social__link_telegram" href="#">
+              <span class="navbar-social__icon"></span>
+              Телеграм
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="capabilities-hero">
+      <div class="container">
+        <div class="capabilities-hero-inner">
+          <div class="breadcrubms">
+            <div class="breadcrubms-wrapper">
+              <ul class="list-reset breadcrubms-list">
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="/">Главная</a>
+                </li>
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="reservation.html">Твои возможности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="title capabilities-hero__title">Твои возможности</h2>
+          <p class="capabilities-hero__descr">
+            Таким образом, сплочённость команды профессионалов требует определения и уточнения стандартных подходов. А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть в равной степени предоставлены сами себе. Кстати,  сделанные на базе интернет-аналитики выводы формируют глобальную экономическую сеть и при этом —  разоблачены.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="capabilities-main">
+      <div class="container">
+        <div class="capabilities-main-wrapper">
+          <div class="capabilities-main-left">
+            <div class="capabilities-main-left__tabs capabilities-main-tabs">
+              <button class="btn-reset btn capabilities-main-tabs__btn capabilities-main-tabs__btn_active" data-status="all">
+                ВСЕ ВОЗМОЖНОСТИ
+                <span class="capabilities-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn capabilities-main-tabs__btn" data-status="forum">
+                ФОРУМНАЯ КАМПАНИЯ
+                <span class="capabilities-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn capabilities-main-tabs__btn" data-status="grant">
+                ГРАНТЫ
+                <span class="capabilities-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn capabilities-main-tabs__btn" data-status="konkurs">
+                КОНКУРСЫ
+                <span class="capabilities-main-tabs__btn_count"></span>
+              </button>
+            </div>
+          </div>
+          <div class="capabilities-main-right">
+            <ul class="list-reset capabilities-main-right__list capabilities-main-right__list_active" data-status="all">
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/01.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/02.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/03.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/04.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/05.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">
+                    Всероссийский конкурс молодёжных проектов среди физических лиц
+                  </h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/06.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/07.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/08.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/09.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/01.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/02.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/03.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/04.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/05.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">
+                    Всероссийский конкурс молодёжных проектов среди физических лиц
+                  </h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/06.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/07.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/08.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/09.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="list-reset capabilities-main-right__list" data-status="forum">
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/01.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/02.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/03.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/04.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="list-reset capabilities-main-right__list" data-status="grant">
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/01.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/02.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/03.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/04.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/05.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">
+                    Всероссийский конкурс молодёжных проектов среди физических лиц
+                  </h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/06.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="list-reset capabilities-main-right__list" data-status="konkurs">
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/01.jpg" alt="КОНКУРС">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_pink">КОНКУРС</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди вузов</h3>
+                  <p class="capabilities-main-item__descr">
+                    Проекты, направленные на организацию занятости молодёжи, в том числе самозанятости
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/02.jpg" alt="ГРАНТ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_green">ГРАНТ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Конкурс НКО по патриотическому воспитанию</h3>
+                  <p class="capabilities-main-item__descr">
+                    Конкурс грантов в форме субсидий из федерального бюджета некоммерческим организациям, в том числе молодёжным и детским общественным объединениям
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+              <li class="capabilities-main-right__item capabilities-main-item">
+                <div class="capabilities-main-item__header">
+                  <img src="resources/images/capabilities/03.jpg" alt="ФОРУМНАЯ КАМПАНИЯ">
+                  <span class="capabilities-main-item__tab capabilities-main-item__tab_orange">ФОРУМНАЯ КАМПАНИЯ</span>
+                </div>
+                <div class="capabilities-main-item__body">
+                  <h3 class="capabilities-main-item__title">Всероссийский конкурс молодёжных проектов среди физических лиц</h3>
+                  <p class="capabilities-main-item__descr">
+                    Граждане Российской Федерации в возрасте от 14 до 35 лет.
+                  </p>
+                  <a class="capabilities-main-item__link" href="#">Подробнее о конкурсе</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="capabilities-main-inner">
+          <div class="capabilities-main-pagination"></div>
+          <button class="btn-reset capabilities-main__show-more">
+            <p class="capabilities-main__show-more_text">ПОКАЗАТЬ ЕЩЕ 9</p>
+            <span class="btn__icon capabilities-main__show-more_icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a class="footer-logo" href="#">
+          <img src="resources/images/logo.svg" alt="Main logo">
+        </a>
+        <div class="footer-phone">
+          <a class="footer-phone__link" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <p class="footer-phone__time-work">пн-пт с 9:00 до 18:00</p>
+        </div>
+        <div class="footer-mail">
+          <a class="footer-mail__link" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+          <p class="footer-mail__time-work">принимаем сообщения 24/7</p>
+        </div>
+        <div class="footer-social">
+          <a class="btn footer-social__link footer-social__link_vk" href="#">
+            <span class="btn__text" data-text="В">
+              В
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="о">
+              о
+            </span>
+            <span class="btn__text" data-text="н">
+              н
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+          </a>
+          <a class="btn footer-social__link footer-social__link_telegram" href="#">
+            <span class="btn__text" data-text="Т">
+              Т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="л">
+              л
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="г">
+              г
+            </span>
+            <span class="btn__text" data-text="р">
+              р
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="м">
+              м
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
