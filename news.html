@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+  <title>Молодежь Мордовии</title>
+
+  <link rel="stylesheet" href="styles/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="resources/libraries/animate.css">
+  <link rel="stylesheet" href="styles/style.min.css">
+
+  <script src="resources/libraries/jquery.js" defer></script>
+  <script src="resources/libraries/wow.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="scripts/main.min.js" defer></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__wrapper">
+          <a class="header-main__swich-version" href="#">Версия для слабовидящих</a>
+          <a class="header-main__logo" href="/Molodezh-Mordovii/">
+            <img src="resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <div class="header-main__search">
+            <img class="header-main__search_open-icon" src="resources/images/icons/search.svg" alt="search">
+            <form class="form">
+              <div class="form-search">
+                <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+              </div>
+            </form>
+          </div>
+          <a class="header-main__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <div class="header-burger">
+            <span class="header-burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-mobile">
+          <a class="navbar-mobile__logo" href="/Molodezh-Mordovii/">
+            <img src="resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <button class="btn-reset navbar-mobile__close"></button>
+        </div>
+        <div class="navbar-wrapper">
+          <ul class="list-reset navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="reservation.html">
+                Бронирование<br> помещений
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_select">
+              <div class="navbar-select">
+                <div class="navbar-select__header">
+                  <div class="navbar-select__selected">
+                    Наша<br> деятельность
+                  </div>
+                </div>
+                <div class="navbar-select__body">
+                  <ul class="list-reset navbar-select__list">
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="activities.html">Наши направления</a>
+                    </li>
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="public-organizations.html">Общественные организации</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="capabilities.html">
+                Твои<br> возможности
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                События
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                Профилактика<br> негативных явлений
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="team.html">
+                О нас
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_hidden">
+              <button class="btn-reset navbar-item__link navbar-item__link_search">
+                <img class="navbar-item__link_open-icon" src="resources/images/icons/search.svg" alt="search">
+                <p class="navbar-item__link_text">Поиск по сайту</p>
+                <form class="form">
+                  <div class="form-search">
+                    <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+                  </div>
+                </form>
+              </button>
+            </li>
+          </ul>
+          <ul class="list-reset navbar-list navbar-list_two">
+            <li class="navbar-item">
+              <button class="btn-reset navbar-item__back">Назад</button>
+            </li>
+            <li class="navbar-item">
+              <h4 class="navbar-item__heading">Наша деятельность</h4>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="activities.html">Наши направления</a>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="#">Общественные организации</a>
+            </li>
+          </ul>
+          <div class="navbar-social">
+            <a class="navbar-social__link navbar-social__link_vk" href="#">
+              <span class="navbar-social__icon"></span>
+              Вконтакте
+            </a>
+            <a class="navbar-social__link navbar-social__link_telegram" href="#">
+              <span class="navbar-social__icon"></span>
+              Телеграм
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="news-hero">
+      <div class="container">
+        <div class="news-hero-inner">
+          <div class="breadcrubms">
+            <div class="breadcrubms-wrapper">
+              <ul class="list-reset breadcrubms-list">
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="/">Главная</a>
+                </li>
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="news.html">Новости</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="title news-hero__title">новости</h2>
+        </div>
+      </div>
+    </section>
+    <section class="news-main">
+      <div class="container">
+        <div class="news-main-wrapper">
+          <div class="news-main-inner">
+            <div class="news-main-tabs">
+              <button class="btn-reset btn news-main-tabs__btn news-main-tabs__btn_active" data-status="all">
+                ВСЕ
+                <span class="news-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn news-main-tabs__btn" data-status="patriot">
+                ПАТРИОТИЗМ
+                <span class="news-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn news-main-tabs__btn" data-status="it">
+                IT
+                <span class="news-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn news-main-tabs__btn" data-status="career">
+                КАРЬЕРА
+                <span class="news-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn news-main-tabs__btn" data-status="dobrovol">
+                ДОБРОВОЛЬЧЕСТВО
+                <span class="news-main-tabs__btn_count"></span>
+              </button>
+              <button class="btn-reset btn news-main-tabs__btn" data-status="samouprav">
+                САМОУПРАВЛЕНИЕ
+                <span class="news-main-tabs__btn_count"></span>
+              </button>
+            </div>
+            <div class="news-main-content">
+              <ul class="list-reset news-main-list news-main-list_active" data-status="all">
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-1.jpg" alt="news 1">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h4>
+                    <a class="news-main-item__link" href="inner-pages/news/melodiya-moyey-rossii.html">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-2.jpg" alt="news 2">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Согласно исследованию, из школьных предметов ребятам больше всего пригодился русский язык</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-3.jpg" alt="news 3">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">«Слет поисковых отрядов ПФО «Никто не забыт»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-4.jpg" alt="news 4">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональная медиашкола «Новый Проект»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-5.jpg" alt="news 5">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональный этап Окружного форума «Медиасистема»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-6.jpg" alt="news 6">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Онлайн-вечеринка «Ждём Фестиваль»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-7.jpg" alt="news 7">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Открытие Республиканского гражданско-патриотического форума</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-8.jpg" alt="news 8">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Курс от Мастерской управления «Сенеж»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-9.jpg" alt="news 9">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональная команда «Твой ход»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset news-main-list" data-status="patriot">
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-1.jpg" alt="news 1">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-2.jpg" alt="news 2">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Согласно исследованию, из школьных предметов ребятам больше всего пригодился русский язык</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-3.jpg" alt="news 3">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">«Слет поисковых отрядов ПФО «Никто не забыт»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-4.jpg" alt="news 4">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональная медиашкола «Новый Проект»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset news-main-list" data-status="it">
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-1.jpg" alt="news 1">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-2.jpg" alt="news 2">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Согласно исследованию, из школьных предметов ребятам больше всего пригодился русский язык</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-3.jpg" alt="news 3">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">«Слет поисковых отрядов ПФО «Никто не забыт»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-4.jpg" alt="news 4">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональная медиашкола «Новый Проект»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-5.jpg" alt="news 5">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональный этап Окружного форума «Медиасистема»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-6.jpg" alt="news 6">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Онлайн-вечеринка «Ждём Фестиваль»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset news-main-list" data-status="career">
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-1.jpg" alt="news 1">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-2.jpg" alt="news 2">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Согласно исследованию, из школьных предметов ребятам больше всего пригодился русский язык</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset news-main-list" data-status="dobrovol">
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-1.jpg" alt="news 1">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-2.jpg" alt="news 2">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Согласно исследованию, из школьных предметов ребятам больше всего пригодился русский язык</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-3.jpg" alt="news 3">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">«Слет поисковых отрядов ПФО «Никто не забыт»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-4.jpg" alt="news 4">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональная медиашкола «Новый Проект»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-5.jpg" alt="news 5">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Региональный этап Окружного форума «Медиасистема»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-6.jpg" alt="news 6">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Онлайн-вечеринка «Ждём Фестиваль»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-7.jpg" alt="news 7">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Открытие Республиканского гражданско-патриотического форума</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-reset news-main-list" data-status="samouprav">
+                <li class="news-main-item">
+                  <div class="news-main-item__header">
+                    <img src="resources/images/news/news-1.jpg" alt="news 1">
+                    <span class="news-main-item__date">22.10.2023</span>
+                  </div>
+                  <div class="news-main-item__body">
+                    <h4 class="news-main-item__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h4>
+                    <a class="news-main-item__link" href="#">Читать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="news-main-empty"></div>
+        </div>
+        <div class="news-main-wrapper">
+          <div class="news-main-inner news-main-inner_pagination">
+            <div class="news-main-pagination"></div>
+            <button class="btn-reset news-main__show-more">
+              <p class="news-main__show-more_text">ПОКАЗАТЬ ЕЩЕ 9</p>
+              <span class="btn__icon news-main__show-more_icon"></span>
+            </button>
+          </div>
+          <div class="news-main-empty news-main-empty_bg"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a class="footer-logo" href="#">
+          <img src="resources/images/logo.svg" alt="Main logo">
+        </a>
+        <div class="footer-phone">
+          <a class="footer-phone__link" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <p class="footer-phone__time-work">пн-пт с 9:00 до 18:00</p>
+        </div>
+        <div class="footer-mail">
+          <a class="footer-mail__link" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+          <p class="footer-mail__time-work">принимаем сообщения 24/7</p>
+        </div>
+        <div class="footer-social">
+          <a class="btn footer-social__link footer-social__link_vk" href="#">
+            <span class="btn__text" data-text="В">
+              В
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="о">
+              о
+            </span>
+            <span class="btn__text" data-text="н">
+              н
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+          </a>
+          <a class="btn footer-social__link footer-social__link_telegram" href="#">
+            <span class="btn__text" data-text="Т">
+              Т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="л">
+              л
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="г">
+              г
+            </span>
+            <span class="btn__text" data-text="р">
+              р
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="м">
+              м
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

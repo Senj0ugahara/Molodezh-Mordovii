@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/Molodezh-Mordovii/resources/favicon.ico" type="image/x-icon">
+  <title>Молодежь Мордовии</title>
+
+  <link rel="stylesheet" href="/Molodezh-Mordovii/styles/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/Molodezh-Mordovii/resources/libraries/animate.css">
+  <link rel="stylesheet" href="/Molodezh-Mordovii/styles/style.min.css">
+
+  <script src="/Molodezh-Mordovii/resources/libraries/jquery.js" defer></script>
+  <script src="/Molodezh-Mordovii/resources/libraries/wow.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="/Molodezh-Mordovii/scripts/main.min.js" defer></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__wrapper">
+          <a class="header-main__swich-version" href="#">Версия для слабовидящих</a>
+          <a class="header-main__logo" href="/">
+            <img src="/Molodezh-Mordovii/resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <div class="header-main__search">
+            <img class="header-main__search_open-icon" src="/Molodezh-Mordovii/resources/images/icons/search.svg" alt="search">
+            <form class="form">
+              <div class="form-search">
+                <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+              </div>
+            </form>
+          </div>
+          <a class="header-main__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <div class="header-burger">
+            <span class="header-burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-mobile">
+          <a class="navbar-mobile__logo" href="/">
+            <img src="/Molodezh-Mordovii/resources/images/logo.svg" alt="Main Logo">
+          </a>
+          <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <button class="btn-reset navbar-mobile__close"></button>
+        </div>
+        <div class="navbar-wrapper">
+          <ul class="list-reset navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="/Molodezh-Mordovii/reservation.html">
+                Бронирование<br> помещений
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_select">
+              <div class="navbar-select">
+                <div class="navbar-select__header">
+                  <div class="navbar-select__selected">
+                    Наша<br> деятельность
+                  </div>
+                </div>
+                <div class="navbar-select__body">
+                  <ul class="list-reset navbar-select__list">
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="/Molodezh-Mordovii/activities.html">Наши направления</a>
+                    </li>
+                    <li class="navbar-select__item">
+                      <a class="navbar-select__link" href="/Molodezh-Mordovii/public-organizations.html">Общественные организации</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="/Molodezh-Mordovii/capabilities.html">
+                Твои<br> возможности
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                События
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="#">
+                Профилактика<br> негативных явлений
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="/Molodezh-Mordovii/team.html">
+                О нас
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-item__link" href="/Molodezh-Mordovii/contacts.html">
+                Контакты
+              </a>
+            </li>
+            <li class="navbar-item navbar-item_hidden">
+              <button class="btn-reset navbar-item__link navbar-item__link_search">
+                <img class="navbar-item__link_open-icon" src="/Molodezh-Mordovii/resources/images/icons/search.svg" alt="search">
+                <p class="navbar-item__link_text">Поиск по сайту</p>
+                <form class="form">
+                  <div class="form-search">
+                    <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
+                  </div>
+                </form>
+              </button>
+            </li>
+          </ul>
+          <ul class="list-reset navbar-list navbar-list_two">
+            <li class="navbar-item">
+              <button class="btn-reset navbar-item__back">Назад</button>
+            </li>
+            <li class="navbar-item">
+              <h4 class="navbar-item__heading">Наша деятельность</h4>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="/Molodezh-Mordovii/activities.html">Наши направления</a>
+            </li>
+            <li class="navbar-item navbar-item_pd-small">
+              <a class="navbar-item__link" href="#">Общественные организации</a>
+            </li>
+          </ul>
+          <div class="navbar-social">
+            <a class="navbar-social__link navbar-social__link_vk" href="#">
+              <span class="navbar-social__icon"></span>
+              Вконтакте
+            </a>
+            <a class="navbar-social__link navbar-social__link_telegram" href="#">
+              <span class="navbar-social__icon"></span>
+              Телеграм
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="news-page-hero">
+      <div class="container">
+        <div class="news-page-hero-inner">
+          <div class="breadcrubms">
+            <div class="breadcrubms-wrapper">
+              <ul class="list-reset breadcrubms-list">
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/">Главная</a>
+                </li>
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/news.html">Новости</a>
+                </li>
+                <li class="breadcrubms-item">
+                  <a class="breadcrubms-item__link" href="melodiya-moyey-rossii.html">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="title news-page-hero__title">Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»</h2>
+          <div class="news-page-hero__info">
+            <span class="news-page-hero__date">10.11.2023</span>
+            <div class="news-page-hero__vk">
+              Новость в ВК:
+              <a class="news-page-hero__link" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-page-main">
+      <div class="container">
+        <div class="news-page-main-wrapper">
+          <div class="news-page-main-left">
+            <p class="news-page-main__descr">
+              Стартовал прием заявок на Международный конкурс юных вокалистов «Мелодия моей России»
+              <br>
+              <br>
+              Конкурс пройдет в два этапа: I этап: с 21 по 28 декабря 2023 (дистанционный); II этап: с 2 по 4 февраля 2024 (очный в Москве). Победители конкурса вместе с солистами московских оперных театров, членами жюри выступят на благотворительном концерте, который будет организован в Москве ко Дню Защитника Отечества. Для участников, проживающих за пределами РФ, очные прослушивания в формате концерта и церемония награждения пройдут в апреле 2024 года в Генуе в Зале библиотеки Университета Генуи. Будут организованы мастер-классы, лекции-беседы о русской культуре и круглый стол с членами жюри, экскурсия по историческому центру города, возложение цветов к могиле Федора Полетаева, Героя Советского Союза, национального героя Италии. В жюри конкурса приглашены Заслуженные артисты России, российские оперные певцы, преподаватели творческих вузов Москвы, известные итальянские педагоги.
+            </p>
+          </div>
+          <div class="news-page-main-right">
+            <img src="/Molodezh-Mordovii/resources/images/news/news-1_big.jpg" alt="news 1 big image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="object-gallery">
+      <div class="container">
+        <div class="object-gallery-wrapper">
+          <h2 class="title object-gallery__title">фото и видео материалы</h2>
+          <div class="swiper object-gallery-swiper">
+            <div class="swiper-wrapper object-gallery__wrapper">
+              <div class="swiper-slide object-gallery-item object-gallery-item_h100">
+                <div class="object-gallery-item__img">
+                  <img src="/Molodezh-Mordovii/resources/images/objects/01.jpg" alt="gallery img 1">
+                </div>
+                <p class="object-gallery-item__name">Название фото или видео</p>
+              </div>
+              <div class="swiper-slide object-gallery-item object-gallery-item_h100">
+                <div class="object-gallery-item__img">
+                  <img src="/Molodezh-Mordovii/resources/images/objects/04.jpg" alt="gallery img 2">
+                </div>
+                <p class="object-gallery-item__name">Название фото или видео</p>
+              </div>
+              <div class="swiper-slide object-gallery-item object-gallery-item_h100">
+                <div class="object-gallery-item__img object-gallery-item__img_video">
+                  <img src="/Molodezh-Mordovii/resources/images/objects/05.jpg" alt="gallery img 3">
+                </div>
+                <p class="object-gallery-item__name">Название фото или видео</p>
+              </div>
+              <div class="swiper-slide object-gallery-item object-gallery-item_h100">
+                <div class="object-gallery-item__img">
+                  <img src="/Molodezh-Mordovii/resources/images/objects/06.jpg" alt="gallery img 4">
+                </div>
+                <p class="object-gallery-item__name">Название фото или видео</p>
+              </div>
+              <div class="swiper-slide object-gallery-item object-gallery-item_h100">
+                <div class="object-gallery-item__img">
+                  <img src="/Molodezh-Mordovii/resources/images/objects/04.jpg" alt="gallery img 5">
+                </div>
+                <p class="object-gallery-item__name">Название фото или видео</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__button swiper__button_prev object-gallery-swiper__button object-gallery-swiper__button_prev swiper__button_disabled"></div>
+          <div class="swiper__button swiper__button_next object-gallery-swiper__button object-gallery-swiper__button_next"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a class="footer-logo" href="#">
+          <img src="/Molodezh-Mordovii/resources/images/logo.svg" alt="Main logo">
+        </a>
+        <div class="footer-phone">
+          <a class="footer-phone__link" href="tel:+78342327353">8 (8342) 32-73-53</a>
+          <p class="footer-phone__time-work">пн-пт с 9:00 до 18:00</p>
+        </div>
+        <div class="footer-mail">
+          <a class="footer-mail__link" href="mailto:mrmc@e-mordovia.ru">mrmc@e-mordovia.ru</a>
+          <p class="footer-mail__time-work">принимаем сообщения 24/7</p>
+        </div>
+        <div class="footer-social">
+          <a class="btn footer-social__link footer-social__link_vk" href="#">
+            <span class="btn__text" data-text="В">
+              В
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="о">
+              о
+            </span>
+            <span class="btn__text" data-text="н">
+              н
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="к">
+              к
+            </span>
+            <span class="btn__text" data-text="т">
+              т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+          </a>
+          <a class="btn footer-social__link footer-social__link_telegram" href="#">
+            <span class="btn__text" data-text="Т">
+              Т
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="л">
+              л
+            </span>
+            <span class="btn__text" data-text="е">
+              е
+            </span>
+            <span class="btn__text" data-text="г">
+              г
+            </span>
+            <span class="btn__text" data-text="р">
+              р
+            </span>
+            <span class="btn__text" data-text="а">
+              а
+            </span>
+            <span class="btn__text" data-text="м">
+              м
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
