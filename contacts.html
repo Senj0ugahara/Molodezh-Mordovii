@@ -14,7 +14,6 @@
 
   <script src="resources/libraries/jquery.js" defer></script>
   <script src="resources/libraries/wow.min.js" defer></script>
-  <script src="resources/libraries/inputMask.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="scripts/main.min.js" defer></script>
 </head>
@@ -25,7 +24,7 @@
       <div class="container">
         <div class="header-main__wrapper">
           <a class="header-main__swich-version" href="#">Версия для слабовидящих</a>
-          <a class="header-main__logo" href="/Molodezh-Mordovii/">
+          <a class="header-main__logo" href="/">
             <img src="resources/images/logo.svg" alt="Main Logo">
           </a>
           <div class="header-main__search">
@@ -46,7 +45,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-mobile">
-          <a class="navbar-mobile__logo" href="/Molodezh-Mordovii/">
+          <a class="navbar-mobile__logo" href="/">
             <img src="resources/images/logo.svg" alt="Main Logo">
           </a>
           <a class="navbar-mobile__phone" href="tel:+78342327353">8 (8342) 32-73-53</a>
@@ -72,7 +71,7 @@
                       <a class="navbar-select__link" href="activities.html">Наши направления</a>
                     </li>
                     <li class="navbar-select__item">
-                      <a class="navbar-select__link" href="#">Общественные организации</a>
+                      <a class="navbar-select__link" href="public-organizations.html">Общественные организации</a>
                     </li>
                   </ul>
                 </div>
@@ -105,8 +104,10 @@
             </li>
             <li class="navbar-item navbar-item_hidden">
               <button class="btn-reset navbar-item__link navbar-item__link_search">
-                <img class="navbar-item__link_open-icon" src="resources/images/icons/search.svg" alt="search">
-                <p class="navbar-item__link_text">Поиск по сайту</p>
+                <div class="navbar-item__link_search-click">
+                  <img class="navbar-item__link_open-icon" src="resources/images/icons/search.svg" alt="search">
+                  <p class="navbar-item__link_text">Поиск по сайту</p>
+                </div>
                 <form class="form">
                   <div class="form-search">
                     <input class="input-reset form__search" type="search" name="search" placeholder="Я ищу...">
@@ -126,7 +127,7 @@
               <a class="navbar-item__link" href="activities.html">Наши направления</a>
             </li>
             <li class="navbar-item navbar-item_pd-small">
-              <a class="navbar-item__link" href="#">Общественные организации</a>
+              <a class="navbar-item__link" href="public-organizations.html">Общественные организации</a>
             </li>
           </ul>
           <div class="navbar-social">
@@ -151,7 +152,7 @@
             <div class="breadcrubms-wrapper">
               <ul class="list-reset breadcrubms-list">
                 <li class="breadcrubms-item">
-                  <a class="breadcrubms-item__link" href="/Molodezh-Mordovii/">Главная</a>
+                  <a class="breadcrubms-item__link" href="/">Главная</a>
                 </li>
                 <li class="breadcrubms-item">
                   <a class="breadcrubms-item__link" href="contacts.html">Контакты</a>
@@ -258,7 +259,7 @@
           </div>
           <div class="contacts-info-col">
             <div class="contacts-info-col__map">
-              <img src="resources/images/map.jpg" alt="map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bd57865ca4e9d4e5a57bfb8ba6933320b6bb57ecb66db14295fa52969d54096&amp;source=constructor" width="100%" height="560" frameborder="0"></iframe>
             </div>
           </div>
           <div class="contacts-info-col">
@@ -362,17 +363,17 @@
       <div class="container">
         <div class="contacts-feedback-wrapper">
           <h2 class="title contacts-feedback__title">обратная связь</h2>
-          <form class="form contacts-feedback__form">
+          <form class="form form-main contacts-feedback__form">
             <div class="form-wrapper">
               <div class="form-item form-item_lg">
-                <input class="input-reset form__input" type="text" name="name" placeholder="Имя">
+                <input class="input-reset form__input" type="text" name="name" placeholder="Имя" required autocomplete="off">
               </div>
               <div class="form-item form-item_lg">
-                <input class="input-reset form__input" type="text" name="phone" placeholder="Телефон">
+                <input class="input-reset form__input" type="text" name="phone" placeholder="Телефон" required autocomplete="off">
               </div>
             </div>
             <div class="form-item">
-              <textarea class="input-reset form__input form__input_message" name="message" placeholder="Ваше сообщение"></textarea>
+              <textarea class="input-reset form__input form__input_message" name="message" placeholder="Ваше сообщение" required autocomplete="off"></textarea>
             </div>
             <div class="form-submit">
               <button class="btn-reset btn form__btn" type="submit">
@@ -388,7 +389,7 @@
                 <span class="btn__icon form__btn_icon"></span>
               </button>
               <div class="form-submit__check">
-                <input class="input-reset form__checkbox" type="checkbox">
+                <input class="input-reset form__checkbox" type="checkbox" required>
                 <span class="form-submit__text">
                   Даю согласие на обработку персональных данных, в соответствии с <a href="#">пользовательским соглашением</a>
                 </span>
@@ -470,6 +471,25 @@
             </span>
           </a>
         </div>
+      </div>
+    </div>
+
+    <div class="dialog dialog_success">
+      <div class="dialog-inner">
+        <h2 class="title dialog__title">СПАСИБО!</h2>
+        <span class="dialog__close"></span>
+        <p class="dialog__descr">
+          Ваша заявка успешно отправлена. Мы свяжемся с Вами в самое ближайшее время.
+        </p>
+      </div>
+    </div>
+    <div class="dialog dialog_error">
+      <div class="dialog-inner">
+        <h2 class="title dialog__title">ошибка!</h2>
+        <span class="dialog__close"></span>
+        <p class="dialog__descr">
+          
+        </p>
       </div>
     </div>
   </footer>
